@@ -18,5 +18,12 @@ Utilizando mensagens JSON, foi criado uma página que recebia mensagens JSON, co
 ### http://loranviscardi.duckdns.org/esp_connect/month.php
 ![Captura de tela 2023-06-27 232139](https://github.com/loran-viscardi/My_Personal_WebSite/assets/103280132/6b71fcae-1c9f-4722-9f46-ad6a2358d5e3)
 
+Para possibilitar uma integração IoT, instalando uma aplicação Node-RED no Linux, facilitou a criação de dashboards dinâmicas, que recebem dados em tempo real enviados por um ESP32, enviando esses dados a um broker MQTT. Através da aplicação é possível receber esses dados via MQTT e tratá-los devidamente.
+### http://loranviscardi.duckdns.org:1880/ui
+![Captura de tela 2023-06-21 163752](https://github.com/loran-viscardi/My_Personal_WebSite/assets/103280132/2e6cc1f0-0501-4178-a6be-767eee559d02)
+![Captura de tela 2023-06-21 163831](https://github.com/loran-viscardi/My_Personal_WebSite/assets/103280132/09042c7a-0a20-45d3-b4ab-0d242ab059c9)
+
+
+
 
 
