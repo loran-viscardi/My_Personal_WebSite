@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link rel="shortcut icon" href="/imagens/logo_new.ico" type="image/icon">
+        <title>Sistemas Embarcados - Loran Viscardi - CT300225X</title>
+        <style>
+                body {
+                        background-color: #212121;
+                        font-family: 'Times New Roman', Times, serif, sans-serif;
+                        color: cornsilk;
+                }
+                h1 {
+                        margin-top: 30px;
+                        text-align: center;
+                        font-size: 36px;
+                        color: cornsilk;
+                }
+
+                ul {
+                        list-style: none;
+                        margin: 30px auto;
+                        padding: 0;
+                        max-width: 500px;
+                        background-color: #3d3d3d;
+                        border-radius: 10px;
+                        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+                }
+
+                li {
+                        padding: 10px;
+                        border-bottom: 1px solid #3d3d3d;
+                        position: relative;
+                        cursor: pointer;
+                }
+
+                li:last-child {
+                        border-bottom: none;
+                }
+
+                li:before {
+                        content: "\2022";
+                        color: #ffd000;
+                        font-weight: bold;
+                        display: inline-block;
+                        width: 1em;
+                        margin-left: 0em;
+                }
+
+                li .details {
+                        display: none;
+                        position: absolute;
+                        top: 100%;
+                        left: 0;
+                        right: 0;
+                        background-color: #3d3d3d;
+                        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+                        padding: 10px;
+                        z-index: 1;
+                }
+
+                li.active .details {
+                        display: block;
+                }
+
+                li .arrow::before {
+                        content: '\25B6';
+                        font-size: 20px;
+                        color: cornsilk;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        right: 10px;
+                        transition: transform 0.2s ease;
+                }
+
+                li.active .arrow::before {
+                        content: '\25BC';
+                        transform: translateY(-50%) rotate(180deg);
+                }
+
+                footer {
+                        margin-top: 50px;
+                        text-align: center;
+                        color: cornsilk;
+                        font-size: 14px;
+                }
+        </style>
+        <script>
+                window.addEventListener('load', function() {
+                        var items = document.querySelectorAll('li');
+                        items.forEach(function(item) {
+                                item.addEventListener('click', function() {
+                                        items.forEach(function(otherItem) {
+                                                if (otherItem != item) {
+                                                        otherItem.classList.remove('active');
+                                                }
+                                        });
+                                        item.classList.toggle('active');
+                                });
+                        });
+                });
+        </script>
+</head>
+<body>
+        <h1>Vantagens e Características de Sistemas Embarcados</h1>
+
+        <ul>
+                <li>
+                        Baixo consumo de energia
+                        <div class="details">
+                                Sistemas embarcados são projetados para operar com baixo consumo de energia, o que é especialmente importante em dispositivos alimentados por baterias ou fontes de energia limitadas.
+                        </div>
+                        <span class="arrow">
+                        </span>
+                </li>
+                <li>
+                        Desempenho otimizado
+                        <div class="details">
+                                Sistemas embarcados são otimizados para desempenho específico, o que significa que podem executar tarefas complexas de forma rápida e eficiente.
+                        </div>
+                        <span class="arrow"></span>
+                </li>
+                <li>
+                        Design compacto
+                        <div class="details">
+                                Sistemas embarcados são projetados para ter um tamanho físico reduzido, o que é essencial para dispositivos portáteis ou sistemas que precisam ser instalados em espaços limitados.
+                        </div>
+                        <span class="arrow"></span>
+                </li>
+                <li>
+                        Custo reduzido
+                        <div class="details">
+                                Sistemas embarcados podem ser projetados e fabricados em grande escala, o que pode resultar em custos de produção reduzidos em comparação com sistemas de computador tradicionais.
+                        </div>
+                        <span class="arrow"></span>
+                </li>
+        </ul>
+
+        <footer>
+                <p>Desenvolvido por Loran Viscardi - CT300225X</p>
+                <img src="/imagens/LOGO-IFSP.png" alt="Logo IFSP" width="200"  >
+                <img src="/imagens/logo_new.ico" alt="Logo LV" width="100">
+        </footer>
+</body>
+</html>
+

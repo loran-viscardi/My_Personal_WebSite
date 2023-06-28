@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="/imagens/logo_new.ico" type="image/icon">
+    <title>Projetos Loran Viscardi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #212121;
+        margin: 0;
+        padding: 0;
+      }
+
+      .header {
+        background-color: #212121;
+        color: cornsilk;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        justify-items: center;
+        align-items: center;
+      }
+
+      h1 {
+        margin-top: 0;
+      }
+
+      .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #474747;
+        color: cornsilk;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .btn:hover {
+        background-color: #474747;
+      }
+
+      .btn i {
+        margin-right: 10px;
+      }
+
+      .btn-google {
+        background-color: #474747;
+      }
+
+      .btn-nasa {
+        background-color: #474747;
+      }
+
+      .btn-sebe {
+        background-color: #474747;
+      }
+ 
+      .btn-temperatura {
+        background-color: #474747;
+      }   
+      
+      .btn-dashboard {
+        background-color: #474747;
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #212121;
+        color: cornsilk;
+      }
+
+
+
+      @media only screen and (max-width: 768px) {
+        .container {
+          grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="header">
+      <h1>Escolha uma opção:</h1>
+    </div>
+
+    <div class="container">
+      <button class="btn btn-google" onclick="window.location.href='https://www.google.com/'">
+        <i class="fas fa-search"></i>GOOGLE
+      </button>
+
+      <button class="btn btn-nasa" onclick="window.location.href='http://loranviscardi.duckdns.org/api-nasa/apod-code'">
+        <i class="far fa-calendar-alt"></i>API NASA APOD
+      </button>
+
+      <button class="btn btn-sebe" onclick="window.location.href='http://loranviscardi.duckdns.org/index.php'">
+        <i class="fas fa-cogs"></i>APRESENTAÇÃO SISTEMAS EMBARCADOS
+      </button>
+
+      <button class="btn btn-temperatura" onclick="window.location.href='http://loranviscardi.duckdns.org/esp_connect'">
+        <i class="fas fa-thermometer-three-quarters"></i>TEMPERATURA E UMIDADE
+      </button> 
+      
+      <button class="btn btn-dashboard" onclick="window.location.href='http://loranviscardi.duckdns.org:1880/ui'">
+        <i class="fas fa-tachometer-alt"></i> DASHBOARD   
+      </button>
+    
+    </div>
+
+    <footer>
+      <p>Desenvolvido por Loran Viscardi - CT300225X</p>
+      <img src="/imagens/LOGO-IFSP.png" alt="Logo IFSP"  >
+      <img src="/imagens/logo_new.ico" alt="Logo LV"  >
+    </footer>
+  </body>
+  
+  </html>
